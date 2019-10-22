@@ -129,7 +129,7 @@ export default {
       default: false
     }
   },
-  beforeUpdate() {
+  created() {
     if (this.forcePage === undefined) return
     if (this.forcePage !== this.selected) {
       this.selected = this.forcePage
